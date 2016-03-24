@@ -46,6 +46,6 @@ while i < len(kcpasswd):
   r = charkch ^ charmh
   pwd += chr(r)
   if r == 0:
-    print '\n\tThe password is: "{}".\n'.format(pwd)
+    print '\n\tThe password is: "{}".\n'.format(pwd.rstrip('\0'))
     break
   i += 2
